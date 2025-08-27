@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from "svelte";
-	import Works from "$lib/components/Works.svelte";
+	import Works from "$lib/components/works.svelte";
 
 	let repos = [];
 	let isLoading = true;
