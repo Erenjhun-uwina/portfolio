@@ -50,7 +50,7 @@
     <div
       class="text-left space-y-6"
       in:fly={{ x: 100, duration: 1200 }}
-      out:fly={{ x: -100, duration: 900 }}
+      out:fly={{ x: 500, duration: 900 }}
     >
       <AboutMe />
     </div>
@@ -59,15 +59,14 @@
 
 <!-- Projects -->
 <section
-  use:inview={{ rootMargin: "-10% 0px" }}
+  use:inview={{ rootMargin: "-30% 0px" }}
   oninview_enter={() => projectsVisible = true}
-  oninview_leave={() => projectsVisible = false}
   class="min-h-[80vh] flex items-center justify-center px-6"
 >
   {#if projectsVisible}
     <div
       class="w-full max-w-5xl"
-      in:fly={{ y: 50, duration: 1200 }}
+      in:fly={{ y: 200, duration: 1200 }}
       out:fly={{ y: -50, duration: 900 }}
     >
       <Projects />
