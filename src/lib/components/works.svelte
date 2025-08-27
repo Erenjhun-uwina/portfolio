@@ -1,11 +1,13 @@
 <script>
     import ImageCarousel from "$lib/components/ImageCarousel.svelte";
+    import ToggleDescription from "$lib/components/ToggleDescription.svelte";
     export let repos = [];
 </script>
 
 <!-- Projects Grid -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {#each repos as repo}
+        {console.log(repo)}
         <div
             class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 hover:border-gray-300"
         >
@@ -23,10 +25,8 @@
                     Created: {repo.formattedDate}
                 </p>
 
-                <!-- Description -->
-                <p class="text-gray-700 mb-4 line-clamp-3 leading-relaxed">
-                    {repo.displayDescription}
-                </p>
+                <!-- Description with Toggle -->
+                <ToggleDescription description={repo.description} />
 
                 <!-- Tags -->
                 <div class="flex flex-wrap gap-2 mb-4">

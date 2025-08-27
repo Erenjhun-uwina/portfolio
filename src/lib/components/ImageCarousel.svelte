@@ -82,20 +82,7 @@
 				{/each}
 			</div>
 			
-			<!-- Pause/Play Button -->
-			<button 
-				on:click={() => {
-					if (intervalId) {
-						clearInterval(intervalId);
-						intervalId = null;
-					} else {
-						intervalId = setInterval(nextImage, 5000);
-					}
-				}}
-				class="absolute top-3 right-3 bg-gray-800 bg-opacity-70 text-white p-1.5 rounded text-xs hover:bg-gray-900 hover:bg-opacity-80 transition-colors duration-200 z-10 shadow-sm"
-				aria-label="{intervalId ? 'Pause auto-scroll' : 'Play auto-scroll'}">
-				{#if intervalId}⏸️{:else}▶️{/if}
-			</button>
+			
 		{/if}
 	{:else}
 		<div class="h-full flex items-center justify-center bg-gray-200">
