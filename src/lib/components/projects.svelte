@@ -116,7 +116,7 @@
 	});
 </script>
 
-<div class="min-h-screen bg-gray-50 text-gray-900 font-sans rounded-sm">
+<div class="min-h-screen  bg-gray-50 text-gray-900 font-sans rounded-2xl overflow-clip my-15 ">
 	<!-- Header -->
 	<header class="bg-gray-900 text-white py-12">
 		<div class="container mx-auto px-6 text-center">

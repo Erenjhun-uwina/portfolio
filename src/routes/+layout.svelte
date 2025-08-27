@@ -41,12 +41,12 @@
 	</div>
 </nav>
 
-<main>
+<main class="bg-gradient-to-br from-gray-50 via-gray-100 to-gray-400 ">
 	{@render children?.()}
 </main>
 
 <!-- Footer -->
-	<footer class="bg-gray-900 text-white py-8 mt-16">
+	<footer class="bg-gray-900 text-white py-8">
 		<div class="container mx-auto px-6 text-center">
 			<p class="text-gray-300">Built with SvelteKit & Tailwind CSS</p>
 
